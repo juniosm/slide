@@ -61,3 +61,52 @@ img {
 [data-control="slide"] li a:hover {
   background: #e54;
 }
+
+.custom-control {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.custom-control li {
+  opacity: 0.8;
+  transform: scale(0.8);
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 2px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+  transition: 0.3s;
+}
+
+.custom-control li.ativo {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.arrow-nav {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.arrow-nav button {
+  border: none;
+  background: #fb5 url("../img/arrow.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.arrow-nav button:hover {
+  background-color: #e54;
+}
+
+.arrow-nav button.prev {
+  transform: rotate(180deg);
+}
