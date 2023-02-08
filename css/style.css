@@ -18,6 +18,10 @@ img {
 }
 
 .slide {
+  will-change: thransform;
+}
+
+.slide {
   display: flex;
 }
 
@@ -26,4 +30,12 @@ img {
   width: 80vw;
   max-width: 800px;
   margin: 0 20px;
+  opacity: 0.8;
+  transform: scale(0.8);
+  transition: 0.5s;
+}
+
+.slide li.ativo {
+  opacity: 1;
+  transform: scale(1);
 }
